@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Model Deployment</title>
+</head>
+ <body>
+    <div>
+      <font color="White"
+       <h1 ><p ><h1><b>Healthcare Diabetics Prediction</b></h1></p>
+            <h3>Project by - Akash Pandey.</h3>
+      
+         
+             <br>
+         <p ><b> Pregnancies </b></p>
+        
+         <form action="{{ url_for('p')}}" method="post">
+          <input type="numbers" name="pregnancies_no" placeholder="Times of pregnent">
+      
+          
+          <p><b>Glucose</b></p>
+          <form action="/" method="POST">
+          <input type="numbers" name="Glucose_no" placeholder="Glucose_number">
+    
+
+
+          <p><b>Insulin</b></p>
+          <form action="/" method="POST">
+          <input type="numbers" name="Insulin_no" placeholder="Insulin_number">
+    
+          <p><b>BMI</b></p>
+          <form action="/" method="POST">
+          <input type="numbers" name="BMI_no" placeholder="BMI_number">
+    
+
+          <p><b>Diabetes Pedigree Function</b></p>
+          <form action="/" method="POST">
+          <input type="numbers" name="DiabetesPedigreeFunction_no" placeholder="DiabetesPedigreeFunction_number"><br>
+    
+
+          <p><b>Age</b></p>
+          <form action="/" method="POST">
+           <input type="numbers" name="Age_in_year" placeholder="Age_in_year">
+
+           <p><b>Result</b></p>
+         </font>
+           <button id="sub" type="submit ">Check person is Diabetic or Not</button>
+           
+            
+         </form>
+         <font color="yellow"
+         <br><h3>{{ prediction_text }}</h3>
+      </font>
+      </div>
+
+  
+
+     <style>
+     body {
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      letter-spacing: 0.2mm;
+      font-size: medium;
+      background-color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 0px;
+         }
+                
+        #sub:hover {
+            background-color: rgb(171, 230, 44);
+        }
+        
+
+      </style> 
+   </body>
+
+</html>
+
+
+
+
